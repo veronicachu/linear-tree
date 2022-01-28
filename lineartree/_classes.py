@@ -957,6 +957,7 @@ class _LinearBoosting(TransformerMixin, BaseEstimator):
             self.intercept_ = self.base_estimator_.intercept_
 
         self.n_features_out_ = X.shape[1]
+        self.features_ = X
 
         return self
 
